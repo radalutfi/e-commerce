@@ -17,7 +17,7 @@ class _ProfilePageState extends State<ProfilePage> {
   final List<Map<String, String>> profileInfo = [
     {
       'title': 'Nama Pengguna',
-      'subtitle': 'Rada',
+      'subtitle': 'Rada Lutfi Mahcrus',
       'icon': 'account_circle',
     },
     {
