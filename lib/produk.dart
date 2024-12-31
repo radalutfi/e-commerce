@@ -12,7 +12,7 @@ class ProdukCard extends StatefulWidget {
 }
 
 class _ProdukCardState extends State<ProdukCard> {
-  bool isLiked = false; // Variabel untuk menyimpan status disukai
+  bool isLiked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,6 @@ class _ProdukCardState extends State<ProdukCard> {
                     ),
                   ),
                 ),
-                // Tombol love (ikon hati)
                 IconButton(
                   icon: Icon(
                     isLiked ? Icons.favorite : Icons.favorite_border,
@@ -52,7 +51,7 @@ class _ProdukCardState extends State<ProdukCard> {
                   ),
                   onPressed: () {
                     setState(() {
-                      isLiked = !isLiked; // Toggle status isLiked
+                      isLiked = !isLiked;
                     });
                   },
                 ),
