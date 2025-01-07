@@ -16,11 +16,10 @@ class Pemesanan extends StatelessWidget {
       totalHarga += hargaProduk * produk.jumlah;
     }
 
-    // Format harga dengan pemisah ribuan dan 3 angka di belakang koma
     final currencyFormatter = NumberFormat.currency(
       locale: 'id_ID',
       symbol: 'Rp',
-      decimalDigits: 3, // Menambahkan tiga angka di belakang koma
+      decimalDigits: 3, 
     );
 
     return Scaffold(
@@ -218,7 +217,6 @@ class Pemesanan extends StatelessWidget {
                       ),
                     ),
                   const SizedBox(height: 10),
-                  // Total Harga
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
